@@ -9,6 +9,7 @@ homepage = "https://github.com/electromeow/color-please"
 license = "MIT"
 license-file = "LICENSE"
 keywords = ["ansi", "terminal", "color", "control"]
+documentation = "https://docs.rs/color_please"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [profile.dev]
