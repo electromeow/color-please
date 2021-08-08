@@ -24,7 +24,7 @@
 //!     set_bg(Color::ColorRGB(0, 200, 256));
 //!     println!("The background is RGB(0,200,256).");
 //!     // Reset the colors
-//!    reset_fg();
+//!     reset_fg();
 //!     reset_bg();
 //! }
 //! ```
@@ -39,7 +39,7 @@
 //!     underline();
 //!     // To blinking
 //!     blink();
-//!    // Or not to blinking
+//!     // Or not to blinking
 //!     blink_off();
 //!     // But this time faster
 //!     fast_blink();
@@ -64,7 +64,7 @@
 //!     bold_and_faint_off();
 //!     underline_off();
 //!     italic_off();
-//!    // Or turn all of the effects and colors off at the same time
+//!     // Or turn all of the effects and colors off at the same time
 //!     reset_all();
 //! }
 //! ```
