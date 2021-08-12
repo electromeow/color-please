@@ -21,8 +21,8 @@
 //!     set_fg(Color::Color256(123));
 //!     println!("This text is color 123 of 256 colors.");
 //!     // Using RGB
-//!     set_bg(Color::ColorRGB(0, 200, 256));
-//!     println!("The background is RGB(0,200,256).");
+//!     set_bg(Color::ColorRGB(0, 200, 255));
+//!     println!("The background is RGB(0,200,255).");
 //!     // Reset the colors
 //!     reset_fg();
 //!     reset_bg();
@@ -34,7 +34,7 @@
 //! fn main(){
 //!     // Making text effects on
 //!     bold();
-//!     faint()
+//!     faint();
 //!     italic();
 //!     underline();
 //!     // To blinking
@@ -73,7 +73,9 @@
 
 mod colorcodes;
 mod graphics;
+mod string_returning;
 mod setcolor;
 pub use colorcodes::*;
 pub use graphics::*;
+pub use string_returning::*;
 pub use setcolor::*;
