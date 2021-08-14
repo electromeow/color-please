@@ -1,4 +1,6 @@
 use crate::Color;
+
+/// Returns the given text's foreground dyed with color given.
 pub fn make_colored_fg(text: &str, color: Color) -> String {
     let mut string = String::new();
     string.push_str(&match color {
@@ -26,6 +28,7 @@ pub fn make_colored_fg(text: &str, color: Color) -> String {
     string
 }
 
+/// Returns the given text's background dyed with the color given.
 pub fn make_colored_bg(text: &str, color: Color) -> String {
     let mut string = String::new();
     string.push_str(match color {
@@ -53,6 +56,7 @@ pub fn make_colored_bg(text: &str, color: Color) -> String {
     string
 }
 
+/// Makes the text given bold.
 pub fn make_bold(text: &str) -> String {
     let mut string = String::new();
     string.push_str("\x1b[1m");
@@ -61,6 +65,7 @@ pub fn make_bold(text: &str) -> String {
     string
 }
 
+/// Applies the faint effect on the text given.
 pub fn make_faint(text: &str) -> String {
     let mut string = String::new();
     string.push_str("\x1b[2m");
@@ -69,6 +74,7 @@ pub fn make_faint(text: &str) -> String {
     string
 }
 
+/// Makes the text given italic.
 pub fn make_italic(text: &str) -> String {
     let mut string = String::new();
     string.push_str("\x1b[3m");
@@ -77,6 +83,7 @@ pub fn make_italic(text: &str) -> String {
     string
 }
 
+/// Makes the text given underlined.
 pub fn make_underlined(text: &str) -> String {
     let mut string = String::new();
     string.push_str("\x1b[4m");
@@ -85,6 +92,7 @@ pub fn make_underlined(text: &str) -> String {
     string
 }
 
+/// Switches the background and foreground colors of the text given.
 pub fn make_reversed(text: &str) -> String {
     let mut string = String::new();
     string.push_str("\x1b[7m");
@@ -93,6 +101,7 @@ pub fn make_reversed(text: &str) -> String {
     string
 }
 
+/// Makes the text given invisible.
 pub fn make_invisible(text: &str) -> String {
     let mut string = String::new();
     string.push_str("\x1b[8m");
@@ -101,6 +110,7 @@ pub fn make_invisible(text: &str) -> String {
     string
 }
 
+/// Makes the text given striked.
 pub fn make_striked(text: &str) -> String {
     let mut string = String::new();
     string.push_str("\x1b[9m");

@@ -1,6 +1,6 @@
 [package]
 name = "color_please"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2018"
 authors = ["electromeow"]
 description = "A small library for terminal coloring and terminal text graphics control"
